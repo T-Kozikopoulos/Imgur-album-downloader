@@ -8,7 +8,7 @@ def imgur_scraper(album_id):
     i = 1
     url = 'http://imgur.com/a/{}'.format(album_id)
 
-    # Get the page's source code, and reformat it into a soup object.
+    # Get the page's source code create the soup object.
     code = requests.get(url)
     text = code.text
     soup = BeautifulSoup(text, "html.parser")
@@ -20,7 +20,7 @@ def imgur_scraper(album_id):
         # then check the file extension of one of the images(they'll all be the same); they might be .png.
         href = 'http://i.imgur.com/' + str(href_temp) + '.jpg'
 
-        # Print the links as you download the images to make sure everything is going smoothly.
+        # Print the links as you download the images to make sure everything is running smoothly.
         print(href)
 
         # Save images as whatever you want, their original format doesn't really matter.
