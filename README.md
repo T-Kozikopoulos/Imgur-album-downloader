@@ -1,2 +1,2 @@
 # Imgur-album-downloader
-Download entire albums the easy way.
+A script for downloading entire albums/galleries from Imgur. Very easy to use.
